@@ -1,0 +1,17 @@
+{
+  "name": "dc-metro-status",
+  "version": "0.9.0",
+  "description": "alexa skill to check real time train arrival information",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vincent Wang",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.6.0",
+    "ask-sdk-model": "^1.18.0",
+    "aws-sdk": "^2.326.0",
+    "axios": "^0.19.2"
+  }
+}

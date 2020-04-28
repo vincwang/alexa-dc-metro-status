@@ -1,0 +1,59 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "You can ask when does your next train arrive at a station",
+          "examplePhrases": [
+            "Alexa open metro status",
+            "Alexa ask metro status for next Silver line at Metro Center"
+          ],
+          "keywords": [
+            "dc",
+            "metro",
+            "wmata",
+            "metro",
+            "status",
+            "nova",
+            "metro",
+            "status"
+          ],
+          "name": "WMATA DC Metro Status",
+          "description": "This skill will provide real time train arrival information for any line at any WMATA station. If there are multiple destinations of the same line, it will list them out. It will also tell users the subsequent arrival times to each destination in case the user can not make it to the next train.\nThis skill is not affiliated with Washington Metropolitan Area Transit Authority.",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "You can ask things like:\n\"next silver line train at metro center station\"\n\"when does next silver line arrive at metro center\"",
+      "category": "PUBLIC_TRANSPORTATION",
+      "distributionCountries": [
+        "US"
+      ]
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:549972005800:function:8625acae-c32a-4886-8378-efdf307a89fe:Release_0"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "privacyPolicyUrl": "https://github.com/vincwang/alexa-dc-metro-status/blob/master/privacy-policy-text-english.txt"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

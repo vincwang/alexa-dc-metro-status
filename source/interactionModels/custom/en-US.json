@@ -1,0 +1,760 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "metro status",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "CaptureStationAndLineIntent",
+          "slots": [
+            {
+              "name": "metroStation",
+              "type": "WMATA_METRO_STATION",
+              "samples": [
+                "{metroStation} station",
+                "I want to know about {metroStation} station",
+                "I am leaving from {metroStation} station",
+                "{metroStation}"
+              ]
+            },
+            {
+              "name": "metroLine",
+              "type": "WMATA_METRO_LINE",
+              "samples": [
+                "I am taking {metroLine} line",
+                "{metroLine}",
+                "{metroLine} line"
+              ]
+            }
+          ],
+          "samples": [
+            "when will {metroLine} line arrive at {metroStation} station",
+            "{metroLine} line train at {metroStation} station",
+            " {metroLine} line at {metroStation} station ",
+            "when does next {metroLine} arrive at {metroStation} station",
+            "next {metroLine} line train at {metroStation} station",
+            "next {metroLine} line train at {metroStation}",
+            "what time does next {metroLine} line train arrive at {metroStation} station",
+            "next {metroLine} line at {metroStation}",
+            "next {metroLine} line at {metroStation} station"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "A01,C01",
+              "name": {
+                "value": "Metro Center"
+              }
+            },
+            {
+              "id": "A02",
+              "name": {
+                "value": "Farragut North"
+              }
+            },
+            {
+              "id": "A03",
+              "name": {
+                "value": "Dupont Circle"
+              }
+            },
+            {
+              "id": "A04",
+              "name": {
+                "value": "Woodley Park-Zoo/Adams Morgan",
+                "synonyms": [
+                  "Woodley Park-Zoo",
+                  "Adams Morgan",
+                  "Zoo",
+                  "The Zoo",
+                  "Woodley Park"
+                ]
+              }
+            },
+            {
+              "id": "A05",
+              "name": {
+                "value": "Cleveland Park"
+              }
+            },
+            {
+              "id": "A06",
+              "name": {
+                "value": "Van Ness-UDC"
+              }
+            },
+            {
+              "id": "A07",
+              "name": {
+                "value": "Tenleytown-AU"
+              }
+            },
+            {
+              "id": "A08",
+              "name": {
+                "value": "Friendship Heights"
+              }
+            },
+            {
+              "id": "A09",
+              "name": {
+                "value": "Bethesda"
+              }
+            },
+            {
+              "id": "A10",
+              "name": {
+                "value": "Medical Center"
+              }
+            },
+            {
+              "id": "A11",
+              "name": {
+                "value": "Grosvenor-Strathmore"
+              }
+            },
+            {
+              "id": "A12",
+              "name": {
+                "value": "White Flint"
+              }
+            },
+            {
+              "id": "A13",
+              "name": {
+                "value": "Twinbrook"
+              }
+            },
+            {
+              "id": "A14",
+              "name": {
+                "value": "Rockville"
+              }
+            },
+            {
+              "id": "A15",
+              "name": {
+                "value": "Shady Grove"
+              }
+            },
+            {
+              "id": "B01,F01",
+              "name": {
+                "value": "Gallery Pl-Chinatown",
+                "synonyms": [
+                  "Chinatown",
+                  "Glallery Place Chinatown",
+                  "Gallery Place"
+                ]
+              }
+            },
+            {
+              "id": "B02",
+              "name": {
+                "value": "Judiciary Square"
+              }
+            },
+            {
+              "id": "B03",
+              "name": {
+                "value": "Union Station"
+              }
+            },
+            {
+              "id": "B04",
+              "name": {
+                "value": "Rhode Island Ave-Brentwood"
+              }
+            },
+            {
+              "id": "B05",
+              "name": {
+                "value": "Brookland-CUA"
+              }
+            },
+            {
+              "id": "B06,E06",
+              "name": {
+                "value": "Fort Totten"
+              }
+            },
+            {
+              "id": "B07",
+              "name": {
+                "value": "Takoma"
+              }
+            },
+            {
+              "id": "B08",
+              "name": {
+                "value": "Silver Spring"
+              }
+            },
+            {
+              "id": "B09",
+              "name": {
+                "value": "Forest Glen"
+              }
+            },
+            {
+              "id": "B10",
+              "name": {
+                "value": "Wheaton"
+              }
+            },
+            {
+              "id": "B11",
+              "name": {
+                "value": "Glenmont"
+              }
+            },
+            {
+              "id": "B35",
+              "name": {
+                "value": "NoMa-Gallaudet U"
+              }
+            },
+            {
+              "id": "C02",
+              "name": {
+                "value": "McPherson Square"
+              }
+            },
+            {
+              "id": "C03",
+              "name": {
+                "value": "Farragut West"
+              }
+            },
+            {
+              "id": "C04",
+              "name": {
+                "value": "Foggy Bottom-GWU"
+              }
+            },
+            {
+              "id": "C05",
+              "name": {
+                "value": "Rosslyn"
+              }
+            },
+            {
+              "id": "C06",
+              "name": {
+                "value": "Arlington Cemetery"
+              }
+            },
+            {
+              "id": "C07",
+              "name": {
+                "value": "Pentagon"
+              }
+            },
+            {
+              "id": "C08",
+              "name": {
+                "value": "Pentagon City"
+              }
+            },
+            {
+              "id": "C09",
+              "name": {
+                "value": "Crystal City"
+              }
+            },
+            {
+              "id": "C10",
+              "name": {
+                "value": "Ronald Reagan Washington National Airport",
+                "synonyms": [
+                  "DCA"
+                ]
+              }
+            },
+            {
+              "id": "C12",
+              "name": {
+                "value": "Braddock Road"
+              }
+            },
+            {
+              "id": "C13",
+              "name": {
+                "value": "King St-Old Town"
+              }
+            },
+            {
+              "id": "C14",
+              "name": {
+                "value": "Eisenhower Avenue"
+              }
+            },
+            {
+              "id": "C15",
+              "name": {
+                "value": "Huntington"
+              }
+            },
+            {
+              "id": "D01",
+              "name": {
+                "value": "Federal Triangle"
+              }
+            },
+            {
+              "id": "D02",
+              "name": {
+                "value": "Smithsonian"
+              }
+            },
+            {
+              "id": "D03,F03",
+              "name": {
+                "value": "L\u0027Enfant Plaza"
+              }
+            },
+            {
+              "id": "D04",
+              "name": {
+                "value": "Federal Center SW"
+              }
+            },
+            {
+              "id": "D05",
+              "name": {
+                "value": "Capitol South"
+              }
+            },
+            {
+              "id": "D06",
+              "name": {
+                "value": "Eastern Market"
+              }
+            },
+            {
+              "id": "D07",
+              "name": {
+                "value": "Potomac Ave"
+              }
+            },
+            {
+              "id": "D08",
+              "name": {
+                "value": "Stadium-Armory"
+              }
+            },
+            {
+              "id": "D09",
+              "name": {
+                "value": "Minnesota Ave"
+              }
+            },
+            {
+              "id": "D10",
+              "name": {
+                "value": "Deanwood"
+              }
+            },
+            {
+              "id": "D11",
+              "name": {
+                "value": "Cheverly"
+              }
+            },
+            {
+              "id": "D12",
+              "name": {
+                "value": "Landover"
+              }
+            },
+            {
+              "id": "D13",
+              "name": {
+                "value": "New Carrollton"
+              }
+            },
+            {
+              "id": "E01",
+              "name": {
+                "value": "Mt Vernon Sq 7th St-Convention Center"
+              }
+            },
+            {
+              "id": "E02",
+              "name": {
+                "value": "Shaw-Howard U"
+              }
+            },
+            {
+              "id": "E03",
+              "name": {
+                "value": "U Street/African-Amer Civil War Memorial/Cardozo",
+                "synonyms": [
+                  "U Street",
+                  "African-Amer Civil War Memorial",
+                  "Cardozo"
+                ]
+              }
+            },
+            {
+              "id": "E04",
+              "name": {
+                "value": "Columbia Heights"
+              }
+            },
+            {
+              "id": "E05",
+              "name": {
+                "value": "Georgia Ave-Petworth"
+              }
+            },
+            {
+              "id": "E07",
+              "name": {
+                "value": "West Hyattsville"
+              }
+            },
+            {
+              "id": "E08",
+              "name": {
+                "value": "Prince George\u0027s Plaza"
+              }
+            },
+            {
+              "id": "E09",
+              "name": {
+                "value": "College Park-U of Md"
+              }
+            },
+            {
+              "id": "E10",
+              "name": {
+                "value": "Greenbelt"
+              }
+            },
+            {
+              "id": "F02",
+              "name": {
+                "value": "Archives-Navy Memorial-Penn Quarter"
+              }
+            },
+            {
+              "id": "F04",
+              "name": {
+                "value": "Waterfront"
+              }
+            },
+            {
+              "id": "F05",
+              "name": {
+                "value": "Navy Yard-Ballpark"
+              }
+            },
+            {
+              "id": "F06",
+              "name": {
+                "value": "Anacostia"
+              }
+            },
+            {
+              "id": "F07",
+              "name": {
+                "value": "Congress Heights"
+              }
+            },
+            {
+              "id": "F08",
+              "name": {
+                "value": "Southern Avenue"
+              }
+            },
+            {
+              "id": "F09",
+              "name": {
+                "value": "Naylor Road"
+              }
+            },
+            {
+              "id": "F10",
+              "name": {
+                "value": "Suitland"
+              }
+            },
+            {
+              "id": "F11",
+              "name": {
+                "value": "Branch Ave"
+              }
+            },
+            {
+              "id": "G01",
+              "name": {
+                "value": "Benning Road"
+              }
+            },
+            {
+              "id": "G02",
+              "name": {
+                "value": "Capitol Heights"
+              }
+            },
+            {
+              "id": "G03",
+              "name": {
+                "value": "Addison Road-Seat Pleasant"
+              }
+            },
+            {
+              "id": "G04",
+              "name": {
+                "value": "Morgan Boulevard"
+              }
+            },
+            {
+              "id": "G05",
+              "name": {
+                "value": "Largo Town Center"
+              }
+            },
+            {
+              "id": "J02",
+              "name": {
+                "value": "Van Dorn Street"
+              }
+            },
+            {
+              "id": "J03",
+              "name": {
+                "value": "Franconia-Springfield"
+              }
+            },
+            {
+              "id": "K01",
+              "name": {
+                "value": "Court House"
+              }
+            },
+            {
+              "id": "K02",
+              "name": {
+                "value": "Clarendon"
+              }
+            },
+            {
+              "id": "K03",
+              "name": {
+                "value": "Virginia Square-GMU"
+              }
+            },
+            {
+              "id": "K04",
+              "name": {
+                "value": "Ballston-MU"
+              }
+            },
+            {
+              "id": "K05",
+              "name": {
+                "value": "East Falls Church"
+              }
+            },
+            {
+              "id": "K06",
+              "name": {
+                "value": "West Falls Church-VT/UVA",
+                "synonyms": [
+                  "West Falls Church-VT",
+                  "UVA"
+                ]
+              }
+            },
+            {
+              "id": "K07",
+              "name": {
+                "value": "Dunn Loring-Merrifield"
+              }
+            },
+            {
+              "id": "K08",
+              "name": {
+                "value": "Vienna/Fairfax-GMU",
+                "synonyms": [
+                  "Vienna",
+                  "Fairfax-GMU"
+                ]
+              }
+            },
+            {
+              "id": "N01",
+              "name": {
+                "value": "McLean"
+              }
+            },
+            {
+              "id": "N02",
+              "name": {
+                "value": "Tysons Corner"
+              }
+            },
+            {
+              "id": "N03",
+              "name": {
+                "value": "Greensboro"
+              }
+            },
+            {
+              "id": "N04",
+              "name": {
+                "value": "Spring Hill"
+              }
+            },
+            {
+              "id": "N06",
+              "name": {
+                "value": "Wiehle-Reston East"
+              }
+            }
+          ],
+          "name": "WMATA_METRO_STATION"
+        },
+        {
+          "values": [
+            {
+              "id": "SV",
+              "name": {
+                "value": "Silver"
+              }
+            },
+            {
+              "id": "GR",
+              "name": {
+                "value": "Green"
+              }
+            },
+            {
+              "id": "OR",
+              "name": {
+                "value": "Orange"
+              }
+            },
+            {
+              "id": "YL",
+              "name": {
+                "value": "Yellow"
+              }
+            },
+            {
+              "id": "BL",
+              "name": {
+                "value": "Blue"
+              }
+            },
+            {
+              "id": "RD",
+              "name": {
+                "value": "Red"
+              }
+            }
+          ],
+          "name": "WMATA_METRO_LINE"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "CaptureStationAndLineIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "metroStation",
+              "type": "WMATA_METRO_STATION",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.706763768486.513483860800"
+              }
+            },
+            {
+              "name": "metroLine",
+              "type": "WMATA_METRO_LINE",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.634056402849.588447780363"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1545633524831.1347716407493",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What month were you born in?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1545633524831.190084519655",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which day were you born on?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1545633524831.788317813173",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which year were you born on?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.706763768486.513483860800",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which station are you leaving from?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.634056402849.588447780363",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Which metro line are you taking?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "14"
+}
