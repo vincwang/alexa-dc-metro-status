@@ -7,6 +7,14 @@
 
 You can ask Alexa what time your next train arrives at your station!
 
+## How to download
+
+<p align="center"> 
+    <img src="./screenshots/listing.png" style="box-shadow: 0px 0px 20px 0px rgba(189,182,189,1)">
+</p>
+
+You can search "WMATA DC Metro Status" on Alexa Skills Store on Amazon Alexa app or enable it directly on [amazon.com](https://www.amazon.com/dp/B087RP35L2/ref=sr_1_1?dchild=1&keywords=wmata+dc+metro&qid=1588135285&s=digital-skills&sr=1-1). 
+
 ## Technologies
 - **Node.js**: Backend to create the skills
 - **AWS Lambda**: Backend to host the skills
@@ -26,10 +34,11 @@ You can say "Alexa ask metro status for next silver line train at Metro Center s
 You can either invoke the skill about saying "open metro status" or just directly ask Alexa a question by saying things like "Alexa ask metro status for next silver line train at metro center?"
 
 
-Ask about a state|She will ask to clarify if you didn't provide a state|If you have asked about a state before, she will remember it so you don't have to say it again next time
-:-------------------------:|:-------------------------:|:-------------------------:
-![](./screenshots/capture_state_intent1.png)|![](./screenshots/capture_state_intent2.png)|![](./screenshots/capture_current_state_intent.png)
+Tell Alexa to check directly|She will ask to clarify if you didn't provide a station or metro line
+:-------------------------:|:-------------------------:
+![](./screenshots/invoke_with_alexa.png)|![](./screenshots/ask_for_station.png)
 
-Ask about a country   |Ask about global summary   |  Aak about top countires and top states
-:-------------------------:|:-------------------------:|:-------------------------:
-![](./screenshots/capture_country_intent.png)|![](./screenshots/capture_global_intent.png)|![](./screenshots/capture_top_countries_and_states_intents.png)
+
+|She will also tell you the subsequent trains if you can't make it to next one|When there is no train avaliable
+:-------------------------:|:-------------------------:
+![](./screenshots/with_subsequent_trains.png)|![](./screenshots/no_trains.png)
