@@ -10,10 +10,11 @@ You can ask Alexa what time your next train arrives at your station!
 ## How to download
 
 <p align="center"> 
-    <img src="./screenshots/listing.png" style="box-shadow: 0px 0px 20px 0px rgba(189,182,189,1)">
+  <a href="https://www.amazon.com/gp/product/B087RP35L2?ref&ref=cm_sw_em_r_as_dp_tMFDlD3s014KL" target="_blank"><img src="./screenshots/listing.png" style="box-shadow: 0px 0px 20px 0px rgba(189,182,189,1)">
+  </a>
 </p>
 
-You can search "WMATA DC Metro Status" on Alexa Skills Store on Amazon Alexa app or enable it directly on [amazon.com](https://www.amazon.com/dp/B087RP35L2/ref=sr_1_1?dchild=1&keywords=wmata+dc+metro&qid=1588135285&s=digital-skills&sr=1-1). 
+You can search "WMATA DC Metro Status" on Alexa Skills Store on Amazon Alexa app or enable it directly on [amazon.com](https://www.amazon.com/gp/product/B087RP35L2?ref&ref=cm_sw_em_r_as_dp_tMFDlD3s014KL). 
 
 ## Technologies
 - **Node.js**: Backend to create the skills
