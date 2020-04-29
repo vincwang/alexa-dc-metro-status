@@ -1,7 +1,7 @@
 <div align="center">
   <h1>WMATA DC Metro Status</h1>
   <p align="center"> 
-  <a href="https://www.amazon.com/gp/product/B087RP35L2?ref&ref=cm_sw_em_r_as_dp_tMFDlD3s014KL" target="_blank">
+  <a href="https://www.amazon.com/gp/product/B087RP35L2?ref&ref=cm_sw_em_r_as_dp_tMFDlD3s014KL" target="_blank" rel="noopener noreferrer">
         <img src="./screenshots/invoke_with_alexa.png" style="box-shadow: 0px 0px 20px 0px rgba(189,182,189,1)">
   </a>
 </p>
@@ -12,7 +12,7 @@ You can ask Alexa what time your next train arrives at your station!
 ## How to download
 
 <p align="center"> 
-  <a href="https://www.amazon.com/gp/product/B087RP35L2?ref&ref=cm_sw_em_r_as_dp_tMFDlD3s014KL" target="_blank"><img src="./screenshots/listing.png" style="box-shadow: 0px 0px 20px 0px rgba(189,182,189,1)">
+  <a href="https://www.amazon.com/gp/product/B087RP35L2?ref&ref=cm_sw_em_r_as_dp_tMFDlD3s014KL" target="_blank" rel="noopener noreferrer"><img src="./screenshots/listing.png" style="box-shadow: 0px 0px 20px 0px rgba(189,182,189,1)">
   </a>
 </p>
 
